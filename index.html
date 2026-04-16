@@ -2,179 +2,123 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>John Doe | Cybersecurity Portfolio</title>
+    <title>John Doe | Cybersecurity Portfolio</title>
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<header class="navbar">
+    <header class="navbar">
 
-<div class="container">
+        <div class="container">
 
-<h1 class="logo">John Doe</h1>
+            <h1 class="logo">John Doe</h1>
 
-<nav>
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
 
-<a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="#labs">Labs</a>
-<a href="#contact">Contact</a>
+            <nav id="navMenu">
 
-</nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#labs">Labs</a>
+                <a href="#contact">Contact</a>
 
-</div>
+            </nav>
 
-</header>
+        </div>
 
-<section class="hero">
+    </header>
 
-<div class="hero-content">
+    <section class="hero">
 
-<h1>Cybersecurity Portfolio</h1>
+        <div class="container hero-grid">
 
-<p>
-Offensive security, threat detection,
-and vulnerability research.
-</p>
+            <div>
 
-<div class="hero-buttons">
+                <h1>Cybersecurity Portfolio</h1>
 
-<a href="#projects" class="btn-primary">
-View Projects
-</a>
+                <p>
+                    Security research, penetration testing,
+                    and practical labs.
+                </p>
 
-<a href="https://github.com/yourusername"
-class="btn-secondary"
-target="_blank">
-GitHub
-</a>
+                <a class="btn-primary" href="#projects">
+                    View Projects
+                </a>
 
-</div>
+            </div>
 
-</div>
+            <div class="hero-card">
 
-</section>
+                <h3>Core Skills</h3>
 
-<section id="about" class="section">
+                <ul>
+                    <li>Penetration Testing</li>
+                    <li>Network Security</li>
+                    <li>Threat Detection</li>
+                    <li>Python Security Tools</li>
+                    <li>Linux</li>
+                </ul>
 
-<div class="container">
+            </div>
 
-<h2>About Me</h2>
+        </div>
 
-<p>
-Cybersecurity enthusiast focused on penetration testing,
-security tooling, and documenting labs from platforms
-like TryHackMe.
-</p>
+    </section>
 
-</div>
+    <section id="projects" class="section">
 
-</section>
+        <div class="container">
 
-<section id="projects" class="section">
+            <h2>Projects</h2>
 
-<div class="container">
+            <div class="grid">
 
-<h2>Featured Projects</h2>
+                <div class="card">
+                    <h3>Port Scanner</h3>
+                    <p>Network discovery tool written in Python.</p>
+                </div>
 
-<div class="grid">
+                <div class="card">
+                    <h3>Log Analyzer</h3>
+                    <p>Detects suspicious activity in logs.</p>
+                </div>
 
-<div class="card">
+                <div class="card">
+                    <h3>Password Audit Tool</h3>
+                    <p>Password security testing tool.</p>
+                </div>
 
-<h3>Python Port Scanner</h3>
+            </div>
 
-<p>
-Network scanner identifying open ports
-and running services.
-</p>
+        </div>
 
-</div>
+    </section>
 
-<div class="card">
+    <footer id="contact">
 
-<h3>Log Analysis Tool</h3>
+        <div class="container">
 
-<p>
-Script for detecting suspicious patterns
-in system logs.
-</p>
+            <h3>Contact</h3>
 
-</div>
+            <p>GitHub: github.com/yourusername</p>
 
-<div class="card">
+            <p>Email: your@email.com</p>
 
-<h3>Password Audit Tool</h3>
+        </div>
 
-<p>
-Security tool testing password strength
-and vulnerabilities.
-</p>
+    </footer>
 
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="labs" class="section">
-
-<div class="container">
-
-<h2>Security Labs</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Linux Fundamentals</h3>
-<p>Privilege escalation and Linux system security.</p>
-</div>
-
-<div class="card">
-<h3>Nmap Enumeration</h3>
-<p>Network discovery and service enumeration.</p>
-</div>
-
-<div class="card">
-<h3>Web Exploitation</h3>
-<p>Testing common web vulnerabilities.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="contact" class="section">
-
-<div class="container">
-
-<h2>Contact</h2>
-
-<p>Email: your@email.com</p>
-
-<p>GitHub: github.com/yourusername</p>
-
-</div>
-
-</section>
-
-<footer>
-
-<p>© 2026 John Doe</p>
-
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 

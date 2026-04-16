@@ -3,124 +3,192 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Cybersecurity Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>John Doe | Cybersecurity Portfolio</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-<h1 class="logo">[John Doe]</h1>
-<p class="subtitle">Cybersecurity Analyst | Ethical Hacking | Threat Detection</p>
+<header class="navbar">
+<div class="container">
+
+<h1 class="logo">John Doe</h1>
 
 <nav>
 <a href="#about">About</a>
-<a href="#skills">Skills</a>
 <a href="#projects">Projects</a>
 <a href="#labs">Labs</a>
 <a href="#certifications">Certifications</a>
 <a href="#contact">Contact</a>
 </nav>
+
+</div>
 </header>
 
 <section class="hero">
-<h2>Cybersecurity Portfolio</h2>
-<p id="typing"></p>
-</section>
 
-<section id="about">
-<h2>About Me</h2>
+<div class="container hero-grid">
+
+<div class="hero-text">
+
+<h2>Cybersecurity Analyst</h2>
+
 <p>
-Cybersecurity student focused on penetration testing,
-network defense, and vulnerability research.
-I enjoy building security tools and documenting labs.
+Focused on penetration testing, threat detection,
+and security research.
 </p>
+
+<div class="buttons">
+
+<a class="btn-primary" href="#projects">View Projects</a>
+
+<a class="btn-secondary" href="https://github.com/yourusername">
+GitHub
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-card">
+
+<h3>Core Skills</h3>
+
+<ul>
+<li>Penetration Testing</li>
+<li>Network Security</li>
+<li>Threat Detection</li>
+<li>Python Security Tools</li>
+<li>Linux</li>
+</ul>
+
+</div>
+
+</div>
+
 </section>
 
-<section id="skills">
-<h2>Skills</h2>
+<section id="about" class="section">
 
-<div class="card-container">
+<div class="container narrow">
 
-<div class="card">
-<h3>Offensive Security</h3>
-<p>Enumeration, exploitation, privilege escalation</p>
-</div>
+<h2>About Me</h2>
 
-<div class="card">
-<h3>Defensive Security</h3>
-<p>Log analysis, threat detection, SIEM monitoring</p>
-</div>
-
-<div class="card">
-<h3>Tools</h3>
-<p>Nmap, Wireshark, Burp Suite, Linux</p>
-</div>
+<p>
+I’m a cybersecurity student passionate about offensive
+security, threat detection, and vulnerability research.
+I enjoy building security tools and documenting labs
+to strengthen practical security skills.
+</p>
 
 </div>
+
 </section>
 
-<section id="projects">
+<section id="projects" class="section">
+
+<div class="container">
+
 <h2>Featured Projects</h2>
 
-<div class="card-container">
+<div class="grid">
 
 <div class="card">
 <h3>Python Port Scanner</h3>
-<p>Network scanner detecting open ports and services.</p>
+<p>
+Network scanning tool for discovering open ports
+and services.
+</p>
 </div>
 
 <div class="card">
-<h3>Log Analyzer</h3>
-<p>Python script detecting suspicious activity in logs.</p>
+<h3>Log Analysis Tool</h3>
+<p>
+Python script that detects suspicious activity
+in system logs.
+</p>
 </div>
 
 <div class="card">
-<h3>Password Cracker</h3>
-<p>Educational brute force password tester.</p>
+<h3>Password Audit Tool</h3>
+<p>
+Educational password testing tool demonstrating
+security weaknesses.
+</p>
+</div>
+
 </div>
 
 </div>
 
 </section>
 
-<section id="labs">
-<h2>TryHackMe Labs</h2>
+<section id="labs" class="section">
 
-<ul>
-<li>Linux Fundamentals</li>
-<li>Nmap Enumeration</li>
-<li>Web Application Security</li>
-<li>Privilege Escalation</li>
-</ul>
+<div class="container">
+
+<h2>Security Labs</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Linux Fundamentals</h3>
+<p>Privilege escalation and Linux system navigation.</p>
+</div>
+
+<div class="card">
+<h3>Nmap Enumeration</h3>
+<p>Network discovery and service detection.</p>
+</div>
+
+<div class="card">
+<h3>Web Exploitation</h3>
+<p>Testing web vulnerabilities and authentication flaws.</p>
+</div>
+
+</div>
+
+</div>
 
 </section>
 
-<section id="certifications">
+<section id="certifications" class="section">
+
+<div class="container narrow">
+
 <h2>Certifications</h2>
 
-<ul>
+<ul class="cert-list">
 <li>CompTIA Security+</li>
 <li>Google Cybersecurity Certificate</li>
 <li>TryHackMe Pre Security</li>
 <li>TryHackMe Jr Penetration Tester</li>
 </ul>
 
+</div>
+
 </section>
 
-<section id="contact">
-<h2>Contact</h2>
+<footer id="contact">
 
-<p>GitHub: github.com/yourusername</p>
+<div class="container">
+
+<h3>Contact</h3>
+
 <p>Email: your@email.com</p>
 
-</section>
+<p>GitHub: github.com/yourusername</p>
 
-<footer>
-<p>© 2026 Cybersecurity Portfolio</p>
+<p>LinkedIn: linkedin.com/in/yourname</p>
+
+</div>
+
 </footer>
 
-<script src="script.js"></script>
-
 </body>
+
 </html>

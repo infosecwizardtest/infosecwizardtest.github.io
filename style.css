@@ -1,4 +1,6 @@
-/* Global Reset */
+/* =========================
+GLOBAL RESET
+========================= */
 
 * {
     margin: 0;
@@ -6,7 +8,9 @@
     box-sizing: border-box;
 }
 
-/* Body */
+/* =========================
+BODY
+========================= */
 
 body {
     font-family: 'Inter', sans-serif;
@@ -15,7 +19,7 @@ body {
     line-height: 1.6;
 }
 
-    /* Cyber grid background */
+    /* Subtle cyber grid background */
 
     body::before {
         content: "";
@@ -27,7 +31,9 @@ body {
         z-index: -1;
     }
 
-/* Navbar */
+/* =========================
+NAVBAR
+========================= */
 
 .navbar {
     display: flex;
@@ -41,15 +47,13 @@ body {
     z-index: 100;
 }
 
-/* Logo */
-
 .logo {
     font-weight: 600;
     font-size: 20px;
     color: #0ea5e9;
 }
 
-/* Nav Links */
+/* NAV LINKS */
 
 nav a {
     margin-left: 20px;
@@ -63,24 +67,100 @@ nav a {
         color: #0ea5e9;
     }
 
-/* Hero Section */
+/* =========================
+HERO SECTION
+========================= */
 
 .hero {
-    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 10% 80px 10%;
     text-align: center;
 }
 
-    .hero h1 {
-        font-size: 44px;
-        margin-bottom: 10px;
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 22px;
+    color: #0284c7;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #64748b;
+    margin-bottom: 35px;
+}
+
+/* Accent name color */
+
+.accent {
+    color: #0ea5e9;
+}
+
+/* =========================
+HERO BUTTONS
+========================= */
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .25s ease;
+}
+
+/* Primary button */
+
+.primary {
+    background: linear-gradient(135deg,#0ea5e9,#2563eb);
+    color: white;
+    box-shadow: 0 8px 18px rgba(37,99,235,0.35);
+}
+
+    .primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 14px 30px rgba(37,99,235,0.45);
     }
 
-    .hero p {
-        color: #64748b;
-        font-size: 18px;
+/* Secondary button */
+
+.secondary {
+    background: white;
+    border: 2px solid #0ea5e9;
+    color: #0ea5e9;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+    .secondary:hover {
+        background: #f0f9ff;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 22px rgba(0,0,0,0.12);
     }
 
-/* Card Grid */
+/* =========================
+CARD GRID
+========================= */
 
 .cards {
     display: grid;
@@ -89,7 +169,9 @@ nav a {
     padding: 40px 10%;
 }
 
-/* Card Style */
+/* =========================
+CARD STYLE
+========================= */
 
 .card {
     background: white;
@@ -100,10 +182,8 @@ nav a {
     border: 1px solid rgba(0,0,0,0.05);
     transition: all .3s ease;
     box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 20px 40px rgba(0,0,0,0.04);
-    position: relative;
+    transform-style: preserve-3d;
 }
-
-    /* Card Hover */
 
     .card:hover {
         transform: translateY(-8px);
@@ -119,14 +199,168 @@ nav a {
         color: #0284c7;
     }
 
-    /* Card Text */
+    /* Card Description */
 
     .card p {
         color: #64748b;
         font-size: 15px;
     }
 
-/* Footer */
+    /* =========================
+METRICS SECTION
+========================= */
+
+.metrics{
+
+padding:40px 10%;
+
+}
+
+.metrics-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+gap:20px;
+
+}
+
+/* Metric Card */
+
+.metric-card{
+
+background:white;
+
+border-radius:16px;
+
+padding:25px;
+
+text-align:center;
+
+border:1px solid rgba(0,0,0,0.05);
+
+box-shadow:
+0 8px 18px rgba(0,0,0,0.05);
+
+transition:all .25s ease;
+
+}
+
+.metric-card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:
+0 16px 35px rgba(0,0,0,0.12);
+
+}
+
+/* Metric Number */
+
+.metric-card h3{
+
+font-size:32px;
+
+color:#0ea5e9;
+
+margin-bottom:6px;
+
+}
+
+/* Metric Label */
+
+.metric-card p{
+
+font-size:14px;
+
+color:#64748b;
+
+}
+
+/* ================= Specializations ================= */
+
+/* ================= Specializations ================= */
+
+.specializations {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+    .specializations .section-title {
+        font-size: 34px;
+        margin-bottom: 60px;
+        color: #333;
+    }
+
+/* Perfectly balanced grid */
+.specialization-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+
+/* Card */
+.specialization-card {
+    background: white;
+    padding: 40px 28px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 220px;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+    .specialization-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+    }
+
+/* Icon */
+.spec-icon {
+    font-size: 34px;
+    margin-bottom: 16px;
+}
+
+/* Title */
+.specialization-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+/* Text */
+.specialization-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 240px;
+}
+
+/* ================= Responsive ================= */
+
+/* Tablets */
+@media (max-width: 1000px) {
+    .specialization-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    .specialization-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+FOOTER
+========================= */
 
 footer {
     text-align: center;
@@ -135,12 +369,22 @@ footer {
     font-size: 14px;
 }
 
-/* Responsive Design */
+/* =========================
+RESPONSIVE DESIGN
+========================= */
 
 @media(max-width:768px) {
 
     .hero h1 {
-        font-size: 32px;
+        font-size: 34px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .hero p {
+        font-size: 16px;
     }
 
     .navbar {

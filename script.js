@@ -25,3 +25,34 @@ card.style.transform = "rotateX(0) rotateY(0) translateY(0)";
 });
 
 });
+
+const counters = document.querySelectorAll('.counter');
+const speed = 200;
+
+const animateCounters = () => {
+
+    counters.forEach(counter => {
+
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+
+        const increment = target / speed;
+
+        if(count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(animateCounters, 10);
+        } else {
+            counter.innerText = target;
+        }
+
+    });
+
+};
+
+const observer = new IntersectionObserver(entries => {
+    if(entries[0].isIntersecting){
+        animateCounters();
+    }
+});
+
+observer.observe(document.querySelector('.metrics'));

@@ -96,46 +96,35 @@
     </section>
 
     <!-- Specializations Section -->
+
     <section class="specializations">
 
         <h2 class="section-title">What I Specialize In</h2>
 
         <div class="specialization-grid">
 
-            <div class="specialization-card">
+            <div class="specialization-card" onclick="openModal('defense')">
                 <div class="spec-icon">🛡️</div>
                 <h3>Defensive Security</h3>
-                <p>
-                    Blue team focused security including threat detection, log analysis,
-                    SIEM monitoring, and incident response.
-                </p>
+                <p>Threat monitoring, SIEM analysis, and incident response.</p>
             </div>
 
-            <div class="specialization-card">
+            <div class="specialization-card" onclick="openModal('pentest')">
                 <div class="spec-icon">💻</div>
                 <h3>Penetration Testing</h3>
-                <p>
-                    Hands-on penetration testing through platforms like TryHackMe and
-                    real-world vulnerability assessments.
-                </p>
+                <p>Hands-on vulnerability discovery and exploitation labs.</p>
             </div>
 
-            <div class="specialization-card">
+            <div class="specialization-card" onclick="openModal('analysis')">
                 <div class="spec-icon">🔍</div>
                 <h3>Threat Analysis</h3>
-                <p>
-                    Investigating suspicious activity, identifying attack patterns,
-                    and understanding adversary techniques.
-                </p>
+                <p>Investigating attacker behavior and analyzing indicators of compromise.</p>
             </div>
 
-            <div class="specialization-card">
+            <div class="specialization-card" onclick="openModal('automation')">
                 <div class="spec-icon">⚙️</div>
                 <h3>Security Automation</h3>
-                <p>
-                    Building scripts and tools to automate security tasks and improve
-                    detection capabilities.
-                </p>
+                <p>Building scripts and tools to automate security tasks.</p>
             </div>
 
         </div>
@@ -203,6 +192,59 @@
 
     <script src="script.js"></script>
 
+    <!-- Modal -->
+
+    <div id="specModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close" onclick="closeModal()">&times;</span>
+
+            <h2 id="modalTitle"></h2>
+
+            <div id="modalBody"></div>
+
+        </div>
+
+    </div>
+
+    <!-- Contact Section -->
+
+    <section class="contact">
+
+        <h2 class="section-title">Get In Touch</h2>
+
+        <p class="contact-intro">
+            Interested in working together, discussing cybersecurity, or reviewing my work? Feel free to reach out.
+        </p>
+
+        <div class="contact-grid">
+
+            <a href="mailto:youremail@example.com" class="contact-card">
+                <div class="contact-icon">📧</div>
+                <h3>Email</h3>
+                <p>youremail@example.com</p>
+            </a>
+
+            <a href="https://github.com/yourusername" class="contact-card" target="_blank">
+                <div class="contact-icon">💻</div>
+                <h3>GitHub</h3>
+                <p>View my projects</p>
+            </a>
+
+            <a href="https://linkedin.com/in/yourprofile" class="contact-card" target="_blank">
+                <div class="contact-icon">🔗</div>
+                <h3>LinkedIn</h3>
+                <p>Connect professionally</p>
+            </a>
+
+        </div>
+
+        <p class="contact-footer">
+            © 2026 Your Name | Cybersecurity Portfolio
+        </p>
+
+    </section>
 </body>
 
 </html>
